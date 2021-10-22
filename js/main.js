@@ -1,8 +1,15 @@
 //Element Selection
 const buttonHamb = document.querySelector('.hamburger-menu');
 const fas = document.querySelector('.fas')
+const closeButton = document.querySelector('.close')
 
 fas.addEventListener('click', function(){
-   //buttonHamb.classList.add('d-block');
-   buttonHamb.style.display = 'block';
+    //First click
+   buttonHamb.style.display = 'block'; 
+})
+
+ //Second click
+ closeButton.addEventListener('click', function(){
+    //First click
+   buttonHamb.style.display = 'none'; 
 })
