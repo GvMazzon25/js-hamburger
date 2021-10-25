@@ -5,11 +5,11 @@ const closeButton = document.querySelector('.close')
 
 fas.addEventListener('click', function(){
     //First click
-   buttonHamb.style.display = 'block'; 
+   buttonHamb.classList.add('active')
 })
 
  //Second click
  closeButton.addEventListener('click', function(){
     //First click
-   buttonHamb.style.display = 'none'; 
+   buttonHamb.classList.remove('active'); 
 })
